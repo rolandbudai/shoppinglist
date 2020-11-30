@@ -1,0 +1,114 @@
+:root{
+    --bg1: #3498db;
+    --bg2: #2980b9;
+
+    --bucket: #e67e22;
+    --bucket2: #d35400;
+
+    --done: #27ae60;
+    --trash: #c0392b;
+
+    --textbg: #ecf0f1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(120deg,var(--bg1),var(--bg2));
+    font-family: 'Nerko One', cursive;
+    min-height: 100vh;
+}
+
+
+header{
+    font-size: 1.5rem;;
+}
+
+header, 
+form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,
+form button{
+    background-color: var(--textbg);
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+}
+
+form button{
+    color: var(--bucket);
+    background-color: var(--textbg);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover{
+    color: var(--bucket2);
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo{
+    margin: 0.5rem;
+    background-color: var(--textbg);
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.todo li{
+    flex: 1;
+}
+
+.trash-btn{
+    background-color: var(--textbg);
+    color:var(--trash);
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.checked-btn{
+    background-color: var(--textbg);
+    color: var(--done);
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.todo-item{
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash-alt,
+.fa-check-square{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.4;
+}
