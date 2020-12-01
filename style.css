@@ -21,6 +21,7 @@ body{
     background-image: linear-gradient(120deg,var(--bg1),var(--bg2));
     font-family: 'Nerko One', cursive;
     min-height: 100vh;
+    max-width: 100vw;
 }
 
 
@@ -42,6 +43,7 @@ form button{
     padding: 0.5rem;
     font-size: 2rem;
     border: none;
+    max-width: 80%;
 }
 
 form button{
