@@ -1,2 +1,2 @@
 # shoppinglist
-small shopping list app
+Shopping list app
