@@ -19,7 +19,7 @@
 
 body{
     background-image: linear-gradient(120deg,var(--bg1),var(--bg2));
-    font-family: cursive;
+
     min-height: 100vh;
     max-width: 100vw;
 }
